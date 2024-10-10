@@ -1,0 +1,11 @@
+.wrapper {
+  width: fit-content;
+
+  &:hover {
+    transform: scale(1.05) translateZ(0);
+  }
+}
+
+.currency {
+  color: #fff;
+}

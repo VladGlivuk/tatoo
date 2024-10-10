@@ -1,0 +1,15 @@
+.link {
+  color: #878787;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  &:hover {
+    color: #ff5e14;
+  }
+
+  &__wrapper {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+  }
+}

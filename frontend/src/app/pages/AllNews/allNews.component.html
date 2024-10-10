@@ -1,0 +1,17 @@
+<section class="dark" #target>
+  <div class="container py-4" *ngIf="!isError">
+    <news-item *ngFor="let news of allNews; let index = index" [news]="news" [index]="index"></news-item>
+
+    <pagination
+      [pages]="pages"
+      [filteredPages]="filteredPages"
+      [getNewItems]="getNewsItemsHelper"
+      (sendCurrentPage)="sendCurrentPage($event)"
+      [scrollToTop]="scrollToTop"
+      [target]="target"
+    ></pagination>
+  </div>
+
+  <error *ngIf="isError" [code]="errorCode"></error>
+</section>
+

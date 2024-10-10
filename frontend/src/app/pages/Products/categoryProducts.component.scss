@@ -1,0 +1,17 @@
+.product {
+  border-radius: 10px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .product {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

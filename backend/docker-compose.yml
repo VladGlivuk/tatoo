@@ -1,0 +1,26 @@
+version: '3.10'
+
+services:
+  nginx:
+    build: .
+    command: -d --name nginx-base -p 80:80 nginx:latest
+    expose:
+      - 80
+    env_file:
+      - .env
+
+  fastapi:
+    build: .
+    command: sh -c "gunicorn --workers 4 --worker-class uvicorn.workers.UvicornWorker -b 0.0.0.0:8000 --chdir ./src --reload --timeout 900 main:app"
+    expose:
+      - 8000
+    env_file:
+      - .env
+
+  flask:
+    build: .
+    command: sh -c "gunicorn --workers 2 -b 0.0.0.0:8080 --chdir ./src --reload --timeout 900 admin_api:admin_panel"
+    env_file:
+      - .env
+    expose:
+      - 8080

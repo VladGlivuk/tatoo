@@ -1,0 +1,7 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet" />
+
+<div class="container py-4" *ngIf="!isError">
+  <app-pricing-item *ngFor="let pricingItem of allPricingItems" [pricingItem]="pricingItem"></app-pricing-item>
+</div>
+
+<error *ngIf="isError" [code]="errorCode"></error>

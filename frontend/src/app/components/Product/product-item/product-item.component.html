@@ -1,0 +1,23 @@
+<div class="col-lg-3 col-md-4 col-sm-6 pb-1 wrapper" (click)="goToProductPage(product.id)">
+  <div class="product-item bg-light mb-4">
+    <div class="product-img position-relative overflow-hidden">
+      <loader-image
+        [image]="product.image"
+        parentClassName="img-fluid w-100"
+        alt="Image Title"
+        [ngParentClassName]="hoveredProductId !== null && hoveredProductId !== product.id ? 'card__background_unhovered' : undefined"
+      ></loader-image>
+    </div>
+
+    <div class="text-center py-4" style="background-color: #1b1b1b">
+      <h5 class="text-light">{{ product.title }}</h5>
+      <br />
+      <p class="text-muted">{{ product.description }}</p>
+
+      <div class="d-flex align-items-center justify-content-center mt-2 currency">
+        <h5>{{ product.price | customCurrencyPipe}}</h5>
+        <h6 class="text-muted ml-2"></h6>
+      </div>
+    </div>
+  </div>
+</div>

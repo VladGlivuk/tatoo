@@ -1,0 +1,24 @@
+<div class="container-fluid pt-5 pb-3" #target>
+  <div class="row px-xl-5 product__wrapper" *ngIf="!isError">
+    <product-item
+      *ngFor="let product of products"
+      [product]="product"
+      class="product"
+      [hoveredProductId]="hoveredProductId"
+      (mouseover)="hoveredProductId = product.id"
+      (mouseout)="hoveredProductId = null"
+    ></product-item>
+  </div>
+
+  <pagination
+    [pages]="pages"
+    [filteredPages]="filteredPages"
+    [getNewItems]="getCategoryProductsHelper"
+    (sendCurrentPage)="sendCurrentPage($event)"
+    [scrollToTop]="scrollToTop"
+    [target]="target"
+    *ngIf="!isError"
+  ></pagination>
+
+  <error *ngIf="isError" [code]="errorCode"></error>
+</div>

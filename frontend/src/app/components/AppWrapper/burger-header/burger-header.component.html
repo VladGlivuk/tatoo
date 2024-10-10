@@ -1,0 +1,7 @@
+<div (click)="onClick()" class="btn">
+  <div class="icon-bar" [@hamburgerX]="isHamburger ? 'hamburger' : 'topX'"></div>
+  <div class="icon-bar" [@hamburgerX]="isHamburger ? 'hamburger' : 'hide'"></div>
+  <div class="icon-bar" [@hamburgerX]="isHamburger ? 'hamburger' : 'bottomX'"></div>
+</div>
+
+<nav-bar-items [isBurger]="true" *ngIf="!isHamburger" class="content"></nav-bar-items>

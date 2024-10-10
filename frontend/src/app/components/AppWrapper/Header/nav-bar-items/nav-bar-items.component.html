@@ -1,0 +1,3 @@
+<ul class="wrapper" [ngClass]="isBurger ? 'wrapper__burger' : null">
+  <nav-bar-item class="item" *ngFor="let item of navBarItems" [navBarItem]="item" [isBurger]="isBurger"></nav-bar-item>
+</ul>

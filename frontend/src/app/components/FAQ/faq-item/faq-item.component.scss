@@ -1,0 +1,97 @@
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #030303;
+}
+
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: #eb502b;
+}
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  background: #1b1b1b;
+  color: #fff;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #373636;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+details p {
+  color: #909090;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px #eb502b;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.control-icon {
+  transition: 0.3s ease;
+  pointer-events: none;
+  fill: #eb502b;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: 0.3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  details {
+    width: 90%;
+  }
+}

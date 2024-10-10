@@ -1,0 +1,27 @@
+<div class="container__wrapper">
+  <loader-image [image]="media.image" (click)="openPopUp(media.id)" parentClassName="multimedia" alt="Media Image"></loader-image>
+
+  <div class="lightbox" [ngClass]="popUpActive">
+    <div class="lightbox-content">
+      <div class="imagebox">
+        <loader-image [image]="media.image" parentClassName="full-screen" alt="Image Title"></loader-image>
+      </div>
+
+      <div class="top">
+        <div class="top__wrapper">
+          <h2 class="date">{{ mediaDate }}</h2>
+          <div class="close__wrapper" (mouseover)="hoverClose = true" (mouseout)="hoverClose = false">
+            <i class="bi bi-x-circle close fa-2x close" (click)="closePopUp()" *ngIf="!hoverClose"></i>
+            <i class="bi bi-x-circle-fill fa-2x close" (click)="closePopUp()" *ngIf="hoverClose"></i>
+          </div>
+        </div>
+
+        <div class="description">
+          <p *ngIf="media.description">
+            {{ media.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

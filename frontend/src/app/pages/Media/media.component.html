@@ -1,0 +1,17 @@
+<div class="wrapper" #target>
+  <div class="container py-4" *ngIf="!isError">
+    <media-item *ngFor="let media of allMedia" [media]="media"></media-item>
+  </div>
+
+  <pagination
+    [pages]="pages"
+    [filteredPages]="filteredPages"
+    [getNewItems]="getMediaItemsHelper"
+    (sendCurrentPage)="sendCurrentPage($event)"
+    [scrollToTop]="scrollToTop"
+    [target]="target"
+    *ngIf="!isError"
+  ></pagination>
+
+  <error *ngIf="isError" [code]="errorCode"></error>
+</div>

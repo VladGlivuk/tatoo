@@ -1,0 +1,14 @@
+<div class="wrapper" *ngIf="!isError">
+  <div *ngIf="news" class="news">
+    <bootstrap-carousel *ngIf="news.images && !!news.images?.length" [images]="news.images"></bootstrap-carousel>
+    <h1>{{ news.title }}</h1>
+
+    <div class="news__description">
+      <span>{{ news.text }}</span>
+    </div>
+
+    <div>{{ newsDate }}</div>
+  </div>
+</div>
+
+<error *ngIf="isError" [code]="errorCode"></error>

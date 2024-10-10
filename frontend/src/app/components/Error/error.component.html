@@ -1,0 +1,19 @@
+<title>MHT | Error</title>
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" />
+
+<div class="vc-container">
+  <div class="vc-content">
+    <h1 class="vc-heading">{{ code }}</h1>
+
+    <p class="vc-sub-heading" *ngIf="errors.length === 1">
+      <span class="blink-infinite"> {{ firstChapter }} </span>
+    </p>
+
+    <p class="vc-sub-heading" *ngIf="errors.length > 1">
+      {{ firstChapter }} <span class="blink-infinite"> {{ secondChapter }}</span>
+    </p>
+
+    <br />
+    <button class="btn" (click)="goHome()">Home</button>
+  </div>
+</div>

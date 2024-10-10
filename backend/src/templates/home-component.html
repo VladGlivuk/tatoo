@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', path='css/home-component.css') }}">
+  <title>MHT | Home</title>
+</head>
+<body>
+
+<!--index carousel-->
+<div class="container">
+<div class="index-carousel">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', path='css/index-carousel-normalize.css') }}">
+  <link rel='stylesheet' href="{{ url_for('static', path='css/index-carousel-slick-min.css') }}">
+  <link rel='stylesheet' href="{{ url_for('static', path='css/index-carousel-slick-theme.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', path='css/index-carousel-main.css') }}">
+
+<div class="split-slideshow">
+  <div class="slideshow">
+    <div class="slider">
+      <div class="item">
+        <img src="{{ url_for('static', path='img/c-item1.png') }}" />
+      </div>
+      <div class="item">
+        <img src="{{ url_for('static', path='img/c-item2.png') }}" />
+      </div>
+      <div class="item">
+        <img src="{{ url_for('static', path='img/c-item3.png') }}" />
+      </div>
+      <div class="item">
+        <img src="{{ url_for('static', path='img/c-item4.png') }}" />
+      </div>
+    </div>
+  </div>
+  <div class="slideshow-text">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+</div>
+
+<a class="the-most" target="_blank">
+  <img src="{{ url_for('static', path='img/mht-logo.png') }}">
+</a>
+
+<script src="{{ url_for('static', path='script/index-carousel-jquery-min.js') }}"></script>
+<script src="{{ url_for('static', path='script/index-carousel-jquery-mouse-wheel.js') }}"></script>
+<script src="{{ url_for('static', path='script/index-carousel-slick-min.js') }}"></script>
+<script src="{{ url_for('static', path='script/index-carousel-main.js') }}"></script>
+</div>
+</div>
+
+<!--description-->
+<!--reasons-->
+<div class="container px-4 py-5" id="featured-3">
+  <main>
+    <div id="carouselExampleControls w-100" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+      </ol>
+
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade buttons" data-bs-ride="carousel " data-bs-interval="5000000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <article class="postcard dark blue">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/1.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title blue"><p>Причина перша</p></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  Стерильність та безпека. У нас тільки одноразові матеріали, бахіли, змінне взуття, дезінфектори та масочки.
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark red">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/2.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Причина друга</a></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  Кваліфіковані майстри, які пройшли навчання у найкращих, отримали сертифікати, у кожного індивідуальний та унікальний підхід, працюють
+                  фріхендом. Ми хочемо, аби твоє тату було особливим, а не під копірку
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark blue">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/3.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title blue"><p>Причина третя</p></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Безкоштовно розробляємо ескізи та проводимо консультації.</div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark red">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/4.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Причина четверта</a></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Комфортна і затишна атмосфера, чай, кава.</div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark blue">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/5.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title blue"><p>Причина п'ята</p></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Працюємо до останнього клієнта. Так, ми дуже гнучкі!</div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark red">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/6.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Причина шоста</a></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Кращі ціни у місті, тату від 400 грн.</div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark blue">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/7.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title blue"><p>Причина сьома</p></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Постійні розіграші та лотереї, тому слідкуй за нашим інстаграмом або за новинами на сайті!</div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark red">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/8.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Причина восьма</a></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                  Безкоштовні семінари для тих, хто хоче стати майстром тату. А також самі знайдемо учням моделей на тату. Тепер непотрібно тестувати тачку на
+                  усіх своїх друзях.
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark blue">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/9.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title blue"><p>Причина дев'ята</p></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Пірсинг майстриня - справжня профі, яка зробить проколи максимально швидко, якісно та безболісно.</div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="postcard dark red">
+              <a class="postcard__img_link" href="#">
+                <img class="postcard__img" src="{{ url_for('static', path='img/10.png') }}" alt="" />
+              </a>
+              <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Причина десята</a></h1>
+                <div class="postcard__subtitle small"></div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Кращий тату-інстаграм у Вінниці, за версією деяких осіб (але це не точно😅).</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!--location-->
+    <div class="container marketing">
+      <hr class="featurette-divider" />
+
+      <div class="row featurette d-flex w-100">
+        <div class="mw-100 w-50">
+          <h2 class="featurette-heading fw-normal lh-1" style="color: #ff4500">Наша локація:</h2>
+          <br />
+          <br />
+          <div class="col-md-7 w-100">
+            <p class="lead text-align-center" style="color: #fff">
+              Україна. Вінниця. вул.Василя Порика 21. Для орієнтиру у нас зелений фасад напроти. перукарні "Юлія". Перший поверх, шостий під'їзд.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.3083091775409!2d28.41538025513628!3d49.22921076601249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5d2b38badcad%3A0xc764819a112b1faa!2sMust%20have%20tattoo%20and%20coffee!5e0!3m2!1sru!2sua!4v1675538757114!5m2!1sru!2sua"
+            width="500"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+<!--social networks-->
+      <div class="wrapper">
+        <hr class="featurette-divider" />
+        <h2 style="color: #ff4500">Our social networks</h2>
+
+        <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline d-flex flex-row justify-content-center gap-3 pt-3">
+          <li>
+            <a
+              href="https://t.me/musthavetattoo_bot
+            "
+              ><img class="social-icons fa" src="{{ url_for('static', path='img/telegram.png') }}" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/must_have_tattoo/"><img class="social-icons fa" src="{{ url_for('static', path='img/instagram.png') }}" alt="" /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@must_have_tattoo?_t=8ZbUXRC06Hm&_r=1
+            "
+              ><img class="social-icons fa" src="{{ url_for('static', path='img/tiktok.png') }}" alt=""
+            /></a>
+          </li>
+        </ul>
+        <hr class="featurette-divider" />
+      </div>
+    </div>
+  </main>
+</div>
+
+<!--info box-->
+<!--footer-->
+</body>
+</html>

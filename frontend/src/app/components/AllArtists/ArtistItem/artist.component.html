@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="artist-card">
+        <div class="">
+          <div class="">
+            <div class="profile-card text-center">
+              <img class="image" src="{{artist.image || artistDefaultImage}}" alt="Artist Person Image" />
+
+              <div class="profile-info">
+                <h2 class="hvr-underline-from-center">
+                  {{ artist.title }}<span>{{ artist.position }}</span>
+                </h2>
+
+                <div class="artist-text">
+                  <p>{{ artist.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

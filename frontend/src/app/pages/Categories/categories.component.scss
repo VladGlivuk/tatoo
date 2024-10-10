@@ -1,0 +1,37 @@
+:root {
+  --spacing-l: 24px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #030303 0%, #151414 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+  padding: 0 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+  gap: 12px;
+}
+
+@media (min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

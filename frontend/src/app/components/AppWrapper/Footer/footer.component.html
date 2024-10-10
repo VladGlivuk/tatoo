@@ -1,0 +1,97 @@
+<div class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>{{ 'footer.callUs' | translate }}</h4>
+              <span><a href="tel: +380681001414" class="contactInfo">+38 (068) 100-14-14</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>{{ 'footer.mailUs' | translate }}</h4>
+              <span><a href="mailto: tattoomht@gmail.com" class="contactInfo">tattoomht@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="/">
+                <img src="https://cdn.discordapp.com/attachments/831244112052879381/1074753333715280065/mht-footer.png" class="img-fluid" alt="logo" />
+              </a>
+            </div>
+            <div class="footer-text">
+              <p>
+                {{ 'footer.text' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>{{ 'footer.tip' | translate }}</h3>
+            </div>
+            <ul>
+              <footer-link-item *ngFor="let linkItem of footerLinks" [linkItem]="linkItem"></footer-link-item>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>{{ 'footer.feedback.title' | translate }}</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>{{ 'footer.feedback.description' | translate }}</p>
+            </div>
+            <div class="subscribe-form">
+              <form #form="ngForm" (ngSubmit)="submit(form.invalid)">
+                <input
+                  #credentials="ngModel"
+                  type="text"
+                  minlength="3"
+                  maxlength="33"
+                  placeholder="{{ 'placeholders.yourContacts' | translate }}"
+                  [(ngModel)]="credentialsValue"
+                  name="credentials"
+                />
+                <button #submitButton><i class="fa fa-comments" aria-hidden="true" type="submit"></i></button>
+              </form>
+            </div>
+            <div *ngIf="credentials.touched && credentials.invalid" class="alert alert-danger">
+              <span *ngIf="credentials.errors?.minlength">{{ 'validation.feedback.minLength' | translate }}</span>
+              <span *ngIf="credentials.errors?.maxlength">{{ 'validation.feedback.maxLength' | translate }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>
+              {{ 'footer.copyright' | translate }} &copy; 2020-{{ currentYear }}, {{ 'footer.rights' | translate }}
+              <a href="https://musthave-tattoo.com/">Must Have Tattoo</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right"></div>
+      </div>
+    </div>
+  </div>
+</div>

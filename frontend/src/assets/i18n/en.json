@@ -1,0 +1,128 @@
+{
+  "home": {
+    "title": "Let's get to know each other",
+    "description": "\"Must Have Tattoo\", is a team of skilled professionals who specialize in tattooing, piercing, and permanent makeup. Since our establishment in 2020, we have consistently provided quality service, training courses, and utilize only top-grade materials such as US ink. Our priority is maintaining a sterile environment for our clients and we strictly use disposable, high-quality equipment such as needles and gloves. Additionally, any necessary touch-ups for your tattoo are included in the initial price. We cordially invite you to experience our services.",
+    "carousel": {
+      "first": {
+        "title": "First reason",
+        "description": "At our establishment, we prioritize sterility and safety measures by utilizing only disposable materials such as shoe covers, replacement shoes, disinfectants, and masks."
+      },
+      "second": {
+        "title": "Second Reason",
+        "description": "Our team comprises highly skilled craftsmen who have received certification from the best in the field. Each member brings an individual and unique approach to their craft, working freehand to ensure that your tattoo is distinct and personalized to you. Our goal is to create a special and unique piece for you, not just a replica of someone else's tattoo"
+      },
+      "third": { "title": "Third reason", "description": "We offer complimentary sketch development and consultation services to our clients." },
+      "fourth": {
+        "title": "Fourth reason",
+        "description": "We provide a comfortable and inviting atmosphere where you can relax and enjoy complimentary tea and coffee."
+      },
+      "fifth": {
+        "title": "Fifth reason",
+        "description": "We are committed to serving our clients and will work until the last appointment of the day. Our team is highly flexible to accommodate our clients' needs."
+      },
+      "sixth": { "title": "Sixth reason", "description": "We offer the most competitive prices in the city, starting at UAH 400 for a tattoo." },
+      "seventh": {
+        "title": "Seventh reason",
+        "description": "We frequently hold contests and lotteries, so be sure to follow our Instagram page or check our website for the latest updates!"
+      },
+      "eighth": {
+        "title": "Eighth reason",
+        "description": "We offer free seminars for aspiring tattoo artists, and we even provide tattoo models for our students to work on. This means you no longer have to experiment on your friends to gain experience."
+      },
+      "ninth": {
+        "title": "Ninth reason",
+        "description": "Our piercing specialist is a highly skilled professional who performs piercings quickly, efficiently, and with minimal discomfort to the client."
+      },
+      "tenth": {
+        "title": "Tenth reason",
+        "description": "Our tattoo studio's Instagram account is highly regarded by many in Vinnytsia, although we wouldn't necessarily claim it to be the absolute best (although we do appreciate the sentiment! 😅)."
+      }
+    },
+    "location": {
+      "title": "Our location:",
+      "description": "We are located at 21 Vasilya Poryka Street in Vinnytsia, Ukraine. Our studio features a green facade. You can find us on the first floor, through the sixth entrance."
+    },
+    "social": "Our social networks"
+  },
+  "navBar": [
+    { "path": "/", "title": "Home" },
+    { "path": "/artists", "title": "Our Artists" },
+    { "path": "/news", "title": "News" },
+    { "path": "/media", "title": "Media" },
+    { "path": "/faq", "title": "FAQ" },
+    { "path": "/categories", "title": "Categories" }
+  ],
+  "footer": {
+    "tip": "Useful Links",
+    "text": "As dedicated professionals, we strive to enhance our skills and knowledge every day, continuously improving the quality of our work. With us, you can trust in our commitment to providing exceptional service and high-quality results.",
+    "callUs": "Call us",
+    "mailUs": "Mail us",
+    "feedback": {
+      "title": "Feedback",
+      "description": "Leave your contacts (Telegram, Instagram, Phone-number, Email, etc.) and the manager will contact you."
+    },
+    "copyright": "Copyright",
+    "rights": " All Right Reserved.",
+    "links": [
+      { "path": "/privacy", "title": "privacy" },
+      { "path": "/", "title": "home" },
+      { "path": "/privacy-policy", "title": "privacy-policy" },
+      { "path": "/news", "title": "news" },
+      { "path": "/payment-terms", "title": "payment-terms" },
+      { "path": "/media", "title": "media" },
+      { "path": "/oferta", "title": "oferta" },
+      { "path": "/categories", "title": "product" },
+      { "path": "/refund", "title": "refund" },
+      { "path": "/pricing", "title": "pricing" }
+    ]
+  },
+  "product": {
+    "price": "Price:",
+    "buyNow": "Buy Now",
+    "purchaseModal": {
+      "title": "Enter your personal data",
+      "termsInfo": {
+        "first": "I accept the",
+        "second": "terms of payment",
+        "third": "user`s agreement",
+        "fourth": "and",
+        "fifth": "refund agreement"
+      },
+      "close": "Close",
+      "submit": "Submit"
+    }
+  },
+  "faq": {
+    "title": " Frequently Asked Questions"
+  },
+  "validation": {
+    "name": {
+      "required": "Name is required",
+      "minLength": "Minimum length of name is 2 symbols",
+      "maxLength": "Maximum length of name is 2 symbols"
+    },
+    "phone": {
+      "required": "Phone is required",
+      "length": "You need to enter 13 phone symbols without gaps"
+    },
+    "terms": {
+      "required": "Accepting user's agreement is required"
+    },
+    "feedback": {
+      "minLength": "Min length is 3 symbols",
+      "maxLength": "Max length is 33 symbols"
+    }
+  },
+  "feedback": {
+    "success": "Your request has been forwarded to the manager, and we kindly ask that you await their return call. In the event that the manager does not get in touch with you, please don't hesitate to reach out to us via phone. It's possible that an error in the contact information provided could have affected the return communication.",
+    "error": "During the processing, an error has arisen, so we apologize for any inconvenience caused. Please be patient while we address the issue or feel free to reach out to us via the contact details provided on our website."
+  },
+  "payment": {
+    "success": "Payment Success!"
+  },
+  "placeholders": {
+    "yourContacts": "Your contacts",
+    "name": "Enter your name",
+    "phone": "Enter your phone"
+  }
+}

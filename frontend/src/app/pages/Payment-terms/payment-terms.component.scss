@@ -1,0 +1,222 @@
+.ol {
+  margin: 0;
+  padding: 0;
+}
+
+.table td,
+.table th {
+  padding: 0;
+}
+
+.c2 {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-size: 11pt;
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+}
+
+.c1 {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-size: 11pt;
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+}
+
+.c7 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: center;
+}
+
+.c0 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+  color: #fff;
+}
+
+.c5 {
+  color: #fff;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-size: 14pt;
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+}
+
+.c6 {
+  background-color: #1b1b1b;
+  margin: auto;
+  width: 50%;
+  border: 3px solid #eb502b;
+  padding: 25px;
+}
+
+.ct {
+  font-weight: 700;
+  color: #eb502b;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-size: 14pt;
+  font-family: "Exo 2", sans-serif;
+  font-style: initial;
+}
+
+.c4 {
+  height: 11pt;
+}
+
+.title {
+  padding-top: 0pt;
+  color: #fff;
+  font-size: 26pt;
+  padding-bottom: 3pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.subtitle {
+  padding-top: 0pt;
+  color: #fff;
+  font-size: 15pt;
+  padding-bottom: 16pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.li {
+  color: #fff;
+  font-size: 11pt;
+  font-family: "Exo 2", sans-serif;
+}
+
+.p {
+  margin: 0;
+  color: #fff;
+  font-size: 11pt;
+  font-family: "Exo 2", sans-serif;
+}
+
+.h1 {
+  padding-top: 20pt;
+  color: #fff;
+  font-size: 20pt;
+  padding-bottom: 6pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.h2 {
+  padding-top: 18pt;
+  color: #fff;
+  font-size: 16pt;
+  padding-bottom: 6pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.h3 {
+  padding-top: 16pt;
+  color: #fff;
+  font-size: 14pt;
+  padding-bottom: 4pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.h4 {
+  padding-top: 14pt;
+  color: #fff;
+  font-size: 12pt;
+  padding-bottom: 4pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.h5 {
+  padding-top: 12pt;
+  color: #fff;
+  font-size: 11pt;
+  padding-bottom: 4pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.h6 {
+  padding-top: 12pt;
+  color: #fff;
+  font-size: 11pt;
+  padding-bottom: 4pt;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1.15;
+  page-break-after: avoid;
+  font-style: italic;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+
+.payment-logo {
+  overflow: hidden;
+  display: inline-block;
+  margin: 0px 0px;
+  border: 0px solid #000000;
+  transform: rotate(0rad) translateZ(0px);
+  -webkit-transform: rotate(0rad) translateZ(0px);
+}
+
+.payment-image {
+  width: 85%;
+  height: 25%;
+  transform: rotate(0rad) translateZ(0px);
+  -webkit-transform: rotate(0rad) translateZ(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .doc-content {
+    width: 100%;
+  }
+}

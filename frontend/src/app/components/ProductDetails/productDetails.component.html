@@ -1,0 +1,83 @@
+<div class="wrapper">
+  <div class="product" *ngIf="product">
+    <div class="product-img" *ngIf="product?.image">
+      <loader-image [image]="product.image" parentClassName="product-img" alt="Image Title"></loader-image>
+    </div>
+    <div class="product-listing">
+      <div class="content">
+        <h1 class="name">{{ product.title }}</h1>
+        <p class="info">
+          {{ product.text }}
+        </p>
+
+        <p class="price">
+          <b>{{ 'product.price' | translate }} </b>
+          {{ product.price | customCurrencyPipe }}
+        </p>
+        <button class="btn" (click)="dialog.show()">{{ 'product.buyNow' | translate }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dialog #dialog>
+  <div class="wrapper">
+    <h1>{{ 'product.purchaseModal.title' | translate }}</h1>
+    <form class="form" #form="ngForm" (ngSubmit)="submitForm(form.value, form.invalid)">
+      <input
+        #name="ngModel"
+        ngModel
+        required
+        type="text"
+        class="input"
+        name="name"
+        minlength="2"
+        maxlength="20"
+        placeholder="{{ 'placeholders.name' | translate }}"
+      />
+      <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
+        <p *ngIf="name.errors?.required">{{ 'validation.name.required' | translate }}</p>
+        <p *ngIf="name.errors?.minlength">{{ 'validation.name.minLength' | translate }}</p>
+        <p *ngIf="name.errors?.maxlength">{{ 'validation.name.maxLength' | translate }}</p>
+      </div>
+
+      <input
+        #phone="ngModel"
+        placeholder="{{ 'placeholders.phone' | translate }}"
+        [(ngModel)]="phoneValue"
+        required
+        type="text"
+        class="input"
+        name="phone"
+        minlength="13"
+        maxlength="13"
+      />
+      <div *ngIf="phone.touched && phone.invalid" class="alert alert-danger">
+        <p *ngIf="phone.errors?.required">{{ 'validation.phone.required' | translate }}</p>
+        <p *ngIf="phone.errors?.minlength">{{ 'validation.phone.length' | translate }}</p>
+        <p *ngIf="phone.errors?.maxlength">{{ 'validation.phone.length' | translate }}</p>
+      </div>
+
+      <div class="form-group form-check checkbox__wrapper">
+        <input #checkbox="ngModel" ngModel required type="checkbox" name="acceptTerms" id="acceptTerms" class="form-check-input checkbox" />
+
+        <label for="acceptTerms" class="form-check-label">
+          {{ 'product.purchaseModal.termsInfo.first' | translate }}
+          <a target="_blank" routerLink="/payment-terms">{{ 'product.purchaseModal.termsInfo.second' | translate }}</a
+          >, <a target="_blank" routerLink="/privacy-policy">{{ 'product.purchaseModal.termsInfo.third' | translate }}</a>
+          {{ 'product.purchaseModal.termsInfo.fourth' | translate }}
+          <a target="_blank" routerLink="/refund">{{ 'product.purchaseModal.termsInfo.fifth' | translate }}</a>
+        </label>
+      </div>
+
+      <div *ngIf="checkbox.touched && checkbox.invalid && checkbox.errors?.required" class="alert alert-danger">
+        {{ 'validation.terms.required' | translate }}
+      </div>
+
+      <div class="button__wrapper">
+        <button class="button" (click)="dialog.close()">{{ 'product.purchaseModal.close' | translate }}</button>
+        <button class="button" type="submit" [disabled]="form.invalid">{{ 'product.purchaseModal.submit' | translate }}</button>
+      </div>
+    </form>
+  </div>
+</dialog>

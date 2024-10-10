@@ -1,0 +1,10 @@
+<div class="container" (click)="imageTransition.next()">
+  <lib-image-transition
+    #imageTransition
+    [imageUrls]="imageUrls"
+    [autoPlay]="true"
+    [transitionType]="transitionType"
+    [transitionDuration]="transitionDuration"
+    imageSize="cover"
+  ></lib-image-transition>
+</div>

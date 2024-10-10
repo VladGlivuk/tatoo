@@ -1,0 +1,27 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet" />
+
+<div class="container" [ngClass]="isHome ? 'wrapper__global' : null">
+  <div class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom" [ngClass]="isHome ? 'wrapper' : null">
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <img src="../../../../assets/images/mht-logo.png" (click)="goHome()" alt="Logo Image" [ngClass]="!isSamePage ? 'image' : null" />
+        </div>
+
+        <div id="mainListDiv" class="main_list">
+          <burger-header class="header__burger"></burger-header>
+
+          <nav-bar-items class="header__default"></nav-bar-items>
+
+          <div class="language__wrapper">
+            <span class="language" [ngClass]="activeLanguage === 'uk' ? 'language_active' : null" (click)="switchLanguageClickHandler('uk')">UA</span>
+            <span class="language" [ngClass]="activeLanguage === 'en' ? 'language_active' : null" (click)="switchLanguageClickHandler('en')">EN</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

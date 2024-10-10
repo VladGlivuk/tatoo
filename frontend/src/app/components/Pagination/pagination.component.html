@@ -1,0 +1,11 @@
+<nav data-pagination *ngIf="pages.length > 1">
+  <a (click)="goToPreviousPage()" *ngIf="this.currentPage > 1"><i class="bi bi-chevron-left"></i></a>
+
+  <ul *ngFor="let page of filteredPages">
+    <li [ngClass]="page === currentPage ? 'active' : null">
+      <a (click)="goToPage(page)">{{ page }}</a>
+    </li>
+  </ul>
+
+  <a (click)="goToNextPage()" *ngIf="this.currentPage < pages[pages.length - 1]"><i class="bi bi-chevron-right"></i></a>
+</nav>

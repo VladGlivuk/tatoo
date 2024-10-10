@@ -1,0 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+
+<a class="card" href="/products/{{ category.id }}">
+  <loader-image
+    *ngIf="!!category.image"
+    [image]="category.image"
+    parentClassName="card__background"
+    [ngParentClassName]="hoveredCategoryId !== null && hoveredCategoryId !== category.id ? 'card__background_unhovered' : undefined"
+    alt="Image Title"
+  ></loader-image>
+
+  <div class="card__content">
+    <h3 class="card__heading">{{ category.title }}</h3>
+    <p class="card__category">{{ category.description }}</p>
+  </div>
+</a>

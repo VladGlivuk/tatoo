@@ -1,0 +1,13 @@
+<div class="hero-section" *ngIf="!isError">
+  <div class="card-grid">
+    <category-item
+      *ngFor="let category of allCategories"
+      [category]="category"
+      [hoveredCategoryId]="hoveredCategoryId"
+      (mouseover)="hoveredCategoryId = category.id"
+      (mouseout)="hoveredCategoryId = null"
+    ></category-item>
+  </div>
+</div>
+
+<error *ngIf="isError" [code]="errorCode"></error>

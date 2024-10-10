@@ -1,0 +1,17 @@
+<div #target>
+  <div *ngIf="!isError" class="wrapper">
+    <artist class="artist" *ngFor="let artist of allArtists" [artist]="artist"></artist>
+  </div>
+
+  <pagination
+    [pages]="pages"
+    [filteredPages]="filteredPages"
+    [getNewItems]="getArtistsHelper"
+    (sendCurrentPage)="sendCurrentPage($event)"
+    [scrollToTop]="scrollToTop"
+    [target]="target"
+    *ngIf="!isError"
+  ></pagination>
+
+  <error *ngIf="isError" [code]="errorCode"></error>
+</div>
